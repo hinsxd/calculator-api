@@ -1,0 +1,11 @@
+{
+  "name": "calculator-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hinsxd/calculator-api.git",
+  "author": "hinsxd <hins.xd@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/node": "^1.12.1"
+  }
+}
