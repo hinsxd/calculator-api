@@ -1,5 +1,5 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
-
+import { allowCors } from "../allowCors";
 const add = (req: VercelRequest, res: VercelResponse) => {
   const nums = (req.query.nums || "") as string;
   const sum = nums
@@ -9,4 +9,4 @@ const add = (req: VercelRequest, res: VercelResponse) => {
   res.status(200).json({ sum });
 };
 
-export default add;
+export default allowCors(add);
